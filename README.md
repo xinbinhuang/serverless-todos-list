@@ -25,12 +25,12 @@ After deploying, copy the apiId from the API Gateway output and paste in the fro
 
 ```js
 # ./client/src/config.ts
-const apiId = '2z9sdic1hj'
-export const apiEndpoint = `https://${apiId}.execute-api.us-east-1.amazonaws.com/dev`
+const apiId = 'xgwpz39dla'
+export const apiEndpoint = `https://${apiId}.execute-api.us-west-2.amazonaws.com/prod`
 
 export const authConfig = {
   
-  domain: 'koala-tree.auth0.com',            // Auth0 domain
+  domain: 'koala-tree.auth0.com',                        // Auth0 domain
   clientId: 'USgkMFXki7EtgnVkZ3shj5dVMcNYaI5u',          // Auth0 client id
   callbackUrl: 'http://localhost:3000/callback'
 }
@@ -48,8 +48,9 @@ npm run start
 ## Current Deplyment details
 
 API Endpoint
-```
-https://2z9sdic1hj.execute-api.us-east-1.amazonaws.com/dev/todos
+
+```bash
+https://xgwpz39dla.execute-api.us-west-2.amazonaws.com/prod/todos
 ```
 
 Postman Collection
