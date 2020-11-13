@@ -25,7 +25,7 @@ After deploying, copy the apiId from the API Gateway output and paste in the fro
 
 ```js
 # ./client/src/config.ts
-const apiId = 'xgwpz39dla'
+const apiId = '<aws-api-id>'
 export const apiEndpoint = `https://${apiId}.execute-api.us-west-2.amazonaws.com/prod`
 
 export const authConfig = {
